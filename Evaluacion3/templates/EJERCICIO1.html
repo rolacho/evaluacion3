@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Notas</title>
+    <link rel="stylesheet" href="/static/CSS/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Notas</h1>
+        <form method="POST" action="/EJERCICIO1">
+            <label for="Nota1">Nota 1:</label>
+            <input type="text" name="Nota1"><br>
+            <label for="Nota2">Nota 2:</label>
+            <input type="text" name="Nota2"><br>
+            <label for="Nota3">Nota 3:</label>
+            <input type="text" name="Nota3"><br>
+            <label for="Asistencia">Asistencia (%):</label>
+            <input type="text" name="Asistencia"><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <div id="resultado">
+            {{ resultado | safe }}
+        </div>
+    </div>
+</body>
+</html>
+
